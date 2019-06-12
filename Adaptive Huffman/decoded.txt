@@ -1,0 +1,8 @@
+The core building block of neural networks is the layer, a data-processing module that
+you can think of as a filter for data. Some data goes in, and it comes out in a more useful form. Specifically, layers extract representations out of the data fed into them—hopefully, representations that are more meaningful for the problem at hand. Most of
+deep learning consists of chaining together simple layers that will implement a form
+of progressive data distillation. A deep-learning model is like a sieve for data processing, made of a succession of increasingly refined data filters—the layers.
+Here, our network consists of a sequence of two Dense layers, which are densely
+connected (also called fully connected) neural layers. The second (and last) layer is a
+10-way softmax layer, which means it will return an array of 10 probability scores (summing to 1). Each score will be the probability that the current digit image belongs to
+one of our 10 digit classes.e
