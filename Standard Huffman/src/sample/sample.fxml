@@ -1,0 +1,38 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <AnchorPane maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
+                <children>
+                    <ButtonBar layoutX="179.0" layoutY="69.0" prefHeight="40.0" prefWidth="200.0" />
+                    <Button fx:id="CompressBtn" layoutX="246.0" layoutY="109.0" mnemonicParsing="false" onAction="#compClick" prefHeight="40.0" prefWidth="148.0" text="Compress" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="246.0" />
+                    <Button fx:id="DecompressBtn" layoutX="246.0" layoutY="227.0" mnemonicParsing="false" onAction="#deCompClick" prefHeight="40.0" prefWidth="148.0" text="Decompress" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="246.0" />
+                    <Label fx:id="lbl1" layoutX="47.0" layoutY="181.0" prefHeight="18.0" prefWidth="568.0" text="The Compressed Cdoe" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="47.0" />
+                    <Label fx:id="lbl2" layoutX="47.0" layoutY="300.0" prefHeight="18.0" prefWidth="543.0" text="The Decompressed Text" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="47.0" />
+                    <TextArea fx:id="txtEntry" layoutX="36.0" layoutY="21.0" prefHeight="67.0" prefWidth="568.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" />
+                </children>
+            </AnchorPane>
+        </children>
+    </VBox>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+
+</GridPane>
